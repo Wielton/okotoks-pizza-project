@@ -1,0 +1,79 @@
+body {
+    background-color: #d2aa83;
+}
+#header {
+    background-color: #a51818;
+   
+}
+/* Descendant Selector */
+header a {
+        background-color:#d2aa83;
+        border: #f2d6ad;
+        border-radius: 5px;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.85;
+        transition: 0.3s;
+
+}
+
+header a:hover {
+    opacity: 1
+}
+
+/* Child selectors and psuedo selectors */
+nav > a {
+
+    text-decoration: none;
+    
+}
+
+
+nav > a:link {
+
+    color:#a51818;
+}
+nav > a:active {
+    
+    color: blue;
+}
+
+nav > a:visited {
+
+    color: black;
+}   
+
+
+
+/* Adjacent Selector */
+
+
+
+
+
+
+
+.tel-link {
+    
+    background-color:#a51818;
+    border:#d2aa83;
+    border-radius: 5px;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: #f2d6ad;
+    margin: 4px 2px;
+    opacity: 0.85;
+    transition: 0.3s;
+    
+    }  
+
+.tel-link:hover {opacity: 1}
+
+.tel-link > a:active {
+    
+    color: black;
+}
