@@ -1,61 +1,125 @@
-body {
-    background-color: #d2aa83;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-#header {
-    background-color: #a51818;
-   
-}
-/* Descendant Selector */
-header a {
-        background-color:#d2aa83;
-        border: #f2d6ad;
-        border-radius: 5px;
-        padding: 16px 32px;
-        text-align: center;
-        font-size: 16px;
-        margin: 4px 2px;
-        opacity: 0.85;
-        transition: 0.3s;
 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "header header header"  
+                         "main main main"
+                         "footer footer footer";
+}
+
+.main-head {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-areas: "logo .  menu about contact";
+    background-color: #a51818;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-page {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+    grid-template-areas: "phone . logo . ."
+                         "calzones para para para drink"
+                         ". para para para ."
+                         ". . video . .";
+    background-color: #d2aa83;
+    justify-items: center;
+    align-items: center;
+    height: 150vh;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #a51818;
+    
+    height: 8vh;
 }
 
 header a:hover {
     opacity: 1
 }
 
-/* Child selectors and psuedo selectors */
-nav > a {
-
+.link-1 {
+    grid-area: menu;
+    box-sizing: border-box;
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    background-color:#d2aa83;
+    border: #f2d6ad;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 1em;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+.link-2 {
+    grid-area: about;
+    box-sizing: border-box;
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    background-color:#d2aa83;
+    border: #f2d6ad;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 1em;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+.link-3 {
+    grid-area: contact;
+    box-sizing: border-box;
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    background-color:#d2aa83;
+    border: #f2d6ad;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 1em;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+* a {
     text-decoration: none;
-    
+    font-family: 'Rubik', sans-serif;
 }
 
-
-nav > a:link {
+header >  a:link {
 
     color:#a51818;
 }
-nav > a:active {
+
+
+header > a:active {
     
-    color: blue;
+    color: #a51818;
 }
 
-nav > a:visited {
+header > a:visited {
 
     color: black;
 }   
 
 
-
-/* Adjacent Selector */
-
-
-
-
-
-
-
-.tel-link {
+.phone {
+    
     
     background-color:#a51818;
     border:#d2aa83;
@@ -68,23 +132,42 @@ nav > a:visited {
     margin: 4px 2px;
     opacity: 0.85;
     transition: 0.3s;
+    justify-items: center;
+    align-items: center;
     
     }  
 
-.tel-link:hover {opacity: 1}
+.phone:hover {opacity: 1}
 
-.tel-link > a:active {
-    
-    color: black;
+.phone > a {
+    color: #d2aa83;
 }
 
+.logo-big {
+    grid-area: logo;
     
+}
 
+.calzones {
+    grid-area: calzones;
+}
 
+.drinkpic {
+    grid-area: drink;
+}
+.paragraph {
+    grid-area: para;
+}
+.video {
+    grid-area: video;
+}
 
-
-
-
+main p {
+    padding: 0 10vw 0 10vw;
+    font-size: 2em;
+    color: #a51818;
+    
+}
 
 
  

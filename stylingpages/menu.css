@@ -1,7 +1,9 @@
 body {
+    display: grid;
     background-color: #d2aa83;
 }
 #header {
+    display: grid;
     background-color: #a51818;
    
 }
@@ -47,7 +49,6 @@ nav > a:visited {
 
 
 
-/* Adjacent Selector */
 
 
 
@@ -55,7 +56,8 @@ nav > a:visited {
 
 
 
-/* .tel-link */
+
+
 header + a {
     
     background-color:#a51818;
