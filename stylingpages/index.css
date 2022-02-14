@@ -5,12 +5,17 @@
 }
 
 
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: "header header header"  
                          "main main main"
+                         "main main main"
+                         "main main main"
+                         "main main main"
                          "footer footer footer";
+    
 }
 
 .main-head {
@@ -29,11 +34,12 @@
 .main-page {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
-    grid-template-areas: "phone . logo . ."
-                         "calzones para para para drink"
-                         ". para para para ."
-                         ". . video . .";
+    grid-template-columns: 2fr 2fr 2fr 1fr 3fr;
+    grid-template-areas: "phone . . . ."
+                         "para1 para1 calzones  logo logo"
+                         "drink para2 para2 logo logo"
+                         ". . . video ."
+                         ". para3 para3 para3 .";
     background-color: #d2aa83;
     justify-items: center;
     align-items: center;
@@ -120,16 +126,16 @@ header > a:visited {
 
 .phone {
     
-    
+    grid-area: phone;
     background-color:#a51818;
     border:#d2aa83;
     border-radius: 5px;
     padding: 16px 32px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
     text-decoration: none;
     color: #f2d6ad;
-    margin: 4px 2px;
+    
     opacity: 0.85;
     transition: 0.3s;
     justify-items: center;
@@ -150,22 +156,36 @@ header > a:visited {
 
 .calzones {
     grid-area: calzones;
+
 }
 
 .drinkpic {
     grid-area: drink;
 }
-.paragraph {
-    grid-area: para;
+.paragraph-1 {
+    grid-area: para1;
+   
+    font-size: 2em;
+    color: #a51818;
+}
+.paragraph-2 {
+    grid-area: para2;
+   
+    font-size: 2em;
+    color: #a51818;
+}
+.paragraph-3 {
+    grid-area: para3;
+   
+    font-size: 2em;
+    color: #a51818;
 }
 .video {
     grid-area: video;
 }
 
 main p {
-    padding: 0 10vw 0 10vw;
-    font-size: 2em;
-    color: #a51818;
+    
     
 }
 
