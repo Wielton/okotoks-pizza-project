@@ -29,6 +29,7 @@
     z-index: 1;
     justify-items: center;
     align-items: center;
+    justify-content: center;
 }
 
 .main-page {
@@ -49,7 +50,6 @@
 .footer {
     grid-area: footer;
     background-color: #a51818;
-    
     height: 8vh;
 }
 
@@ -127,23 +127,16 @@ header > a:visited {
 .phone {
     
     grid-area: phone;
-    background-color:#a51818;
-    border:#d2aa83;
-    border-radius: 5px;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 1em;
-    text-decoration: none;
-    color: #f2d6ad;
-    
+    color:#a51818;
+    font-size: 3em;
     opacity: 0.85;
     transition: 0.3s;
-    justify-items: center;
-    align-items: center;
     
     }  
 
-.phone:hover {opacity: 1}
+.phone:hover {
+    transform: scale(1.5);
+}
 
 .phone > a {
     color: #d2aa83;
@@ -156,38 +149,45 @@ header > a:visited {
 
 .calzones {
     grid-area: calzones;
+    transition: all 2000ms;
+    transition-timing-function: ease;
+}
 
+.calzones:hover {
+    transform: rotate(30deg);
 }
 
 .drinkpic {
     grid-area: drink;
+    transition: all 2000ms;
+    transition-timing-function: ease;
 }
+
+.drinkpic:hover {
+    transform: rotate(-30deg);
+}
+
 .paragraph-1 {
     grid-area: para1;
-   
     font-size: 2em;
     color: #a51818;
 }
+
 .paragraph-2 {
     grid-area: para2;
-   
     font-size: 2em;
     color: #a51818;
 }
+
 .paragraph-3 {
     grid-area: para3;
-   
     font-size: 2em;
     color: #a51818;
 }
+
 .video {
     grid-area: video;
-}
-
-main p {
-    
-    
+    border-radius: 5px;
 }
 
 
- 
