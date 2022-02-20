@@ -1,33 +1,17 @@
 @media screen and (min-width: 600px) {
     
     header { 
-        div { 
+        div {
             i {
-               visibility: hidden; 
-            }
-        
-           
-            
-            img {
-                display: inline;
-                
-                
-            
+                visibility: hidden;
             }
         }
-    }
-
-    
-
-    
-
-    
-    nav {
-        a {
+        nav {
+            a {
         visibility: visible;
-    }
+            }
         }  
-
     
-
+    
+    }
 }
