@@ -1,0 +1,9 @@
+$tan: #d2aa83;
+
+$border: 1px $tan solid;
+
+@mixin linkHoverEffect() {
+    opacity: 1;
+    font-size: 1.7em;
+    color: #f2d6ad;
+}
